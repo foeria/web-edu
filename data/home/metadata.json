@@ -1,0 +1,270 @@
+{
+  "title": "网站首页",
+  "url": "https://www.jndhjyzx.com/",
+  "modules": [
+    {
+      "name": "顶部导航",
+      "local_dir": "images/顶部导航",
+      "images": [
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/96e14f88ddf0738.png",
+          "filename": "001_96e14f88ddf0738.png",
+          "alt": "",
+          "size_bytes": 30024,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "首页Banner",
+      "local_dir": "images/首页Banner",
+      "images": [
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/57cbc6a10d331bc.jpg",
+          "filename": "001_57cbc6a10d331bc.jpg",
+          "alt": "",
+          "size_bytes": 549290,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/9453a9274abb3e6.jpg",
+          "filename": "002_9453a9274abb3e6.jpg",
+          "alt": "",
+          "size_bytes": 502308,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/fb9621241f6380.jpg",
+          "filename": "003_fb9621241f6380.jpg",
+          "alt": "",
+          "size_bytes": 490697,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "关于我们",
+      "local_dir": "images/关于我们",
+      "images": [
+        {
+          "original_url": "https://www.jndhjyzx.com/static/a/web/img/c.png",
+          "filename": "001_c.png",
+          "alt": "",
+          "size_bytes": 599663,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "问题论坛",
+      "local_dir": "images/问题论坛",
+      "images": [
+        {
+          "original_url": "https://www.jndhjyzx.com/uploadfile/202604/944468ca9b7f6b.jpg",
+          "filename": "001_944468ca9b7f6b.jpg",
+          "alt": "",
+          "size_bytes": 64466,
+          "downloaded": true
+        },
+        {
+          "original_url": "https://www.jndhjyzx.com/uploadfile/202604/460af5ec1cd6a97.jpg",
+          "filename": "002_460af5ec1cd6a97.jpg",
+          "alt": "",
+          "size_bytes": 68090,
+          "downloaded": true
+        },
+        {
+          "original_url": "https://www.jndhjyzx.com/uploadfile/202604/a03f840a761fc.jpg",
+          "filename": "003_a03f840a761fc.jpg",
+          "alt": "",
+          "size_bytes": 87541,
+          "downloaded": true
+        },
+        {
+          "original_url": "https://www.jndhjyzx.com/uploadfile/202604/76a7670dd091bd2.jpg",
+          "filename": "004_76a7670dd091bd2.jpg",
+          "alt": "",
+          "size_bytes": 100760,
+          "downloaded": true
+        },
+        {
+          "original_url": "https://www.jndhjyzx.com/uploadfile/202603/2ced6fede208420.jpg",
+          "filename": "005_2ced6fede208420.jpg",
+          "alt": "",
+          "size_bytes": 79374,
+          "downloaded": true
+        },
+        {
+          "original_url": "https://www.jndhjyzx.com/uploadfile/202603/1e3b58765a2375d.jpg",
+          "filename": "006_1e3b58765a2375d.jpg",
+          "alt": "",
+          "size_bytes": 109160,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "综合施教",
+      "local_dir": "images/综合施教",
+      "images": [
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/393907428de9f01.jpg",
+          "filename": "001_393907428de9f01.jpg",
+          "alt": "",
+          "size_bytes": 94769,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/a7b284dfc662961.jpg",
+          "filename": "002_a7b284dfc662961.jpg",
+          "alt": "",
+          "size_bytes": 66539,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/1a6821acc5d3eae.jpg",
+          "filename": "003_1a6821acc5d3eae.jpg",
+          "alt": "",
+          "size_bytes": 287650,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/495c62d9f41b751.jpg",
+          "filename": "004_495c62d9f41b751.jpg",
+          "alt": "",
+          "size_bytes": 122921,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/7d5af2667d79126.jpg",
+          "filename": "005_7d5af2667d79126.jpg",
+          "alt": "",
+          "size_bytes": 249934,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/21308a6cb9b96ff.jpg",
+          "filename": "006_21308a6cb9b96ff.jpg",
+          "alt": "",
+          "size_bytes": 435571,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "拓展训练",
+      "local_dir": "images/拓展训练",
+      "images": [
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/a4f4c56ad0194.jpg",
+          "filename": "001_a4f4c56ad0194.jpg",
+          "alt": "",
+          "size_bytes": 90701,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/73b6a1f45612b97.jpg",
+          "filename": "002_73b6a1f45612b97.jpg",
+          "alt": "",
+          "size_bytes": 354462,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/34787a9f42e0904.jpg",
+          "filename": "003_34787a9f42e0904.jpg",
+          "alt": "",
+          "size_bytes": 381191,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/d65d829cef8f9a.jpg",
+          "filename": "004_d65d829cef8f9a.jpg",
+          "alt": "",
+          "size_bytes": 240177,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/216d1c3e717c55b.jpg",
+          "filename": "005_216d1c3e717c55b.jpg",
+          "alt": "",
+          "size_bytes": 452604,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "心理咨询",
+      "local_dir": "images/心理咨询",
+      "images": [
+        {
+          "original_url": "https://www.jndhjyzx.com/static/a/web/img/c8.png",
+          "filename": "001_c8.png",
+          "alt": "",
+          "size_bytes": 138403,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "学生风采",
+      "local_dir": "images/学生风采",
+      "images": [
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/b59e2f7442ad731.jpg",
+          "filename": "001_b59e2f7442ad731.jpg",
+          "alt": "",
+          "size_bytes": 231517,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/4804c3fb330b7a9.jpg",
+          "filename": "002_4804c3fb330b7a9.jpg",
+          "alt": "",
+          "size_bytes": 95339,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/4b9f62026bb9791.jpg",
+          "filename": "003_4b9f62026bb9791.jpg",
+          "alt": "",
+          "size_bytes": 385601,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/f592aded11e97fa.jpg",
+          "filename": "004_f592aded11e97fa.jpg",
+          "alt": "",
+          "size_bytes": 355096,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/445b5866cbe6db9.jpg",
+          "filename": "005_445b5866cbe6db9.jpg",
+          "alt": "",
+          "size_bytes": 262259,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202301/84708c18b690c9b.jpg",
+          "filename": "006_84708c18b690c9b.jpg",
+          "alt": "",
+          "size_bytes": 204717,
+          "downloaded": true
+        }
+      ]
+    },
+    {
+      "name": "页脚联系",
+      "local_dir": "images/页脚联系",
+      "images": [
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/90229136d5d440.png",
+          "filename": "001_90229136d5d440.png",
+          "alt": "",
+          "size_bytes": 54457,
+          "downloaded": true
+        }
+      ]
+    }
+  ]
+}

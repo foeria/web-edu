@@ -1,0 +1,60 @@
+- generic [active] [ref=f11e1]:
+  - heading "24小时服务热线：13864188899、17615827726" [level=1] [ref=f11e7]
+  - generic [ref=f11e8]:
+    - list:
+      - listitem [ref=f11e9]:
+        - link "网站首页" [ref=f11e10] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=f11e11]:
+        - link "关于我们" [ref=f11e12] [cursor=pointer]:
+          - /url: /about/
+      - listitem [ref=f11e13]:
+        - link "问题论坛" [ref=f11e14] [cursor=pointer]:
+          - /url: /zanding/
+      - listitem [ref=f11e15]:
+        - link "综合施教" [ref=f11e16] [cursor=pointer]:
+          - /url: /zonghe/
+      - listitem [ref=f11e17]:
+        - link "拓展训练" [ref=f11e18] [cursor=pointer]:
+          - /url: /xunlian/
+      - listitem [ref=f11e19]:
+        - link "心理咨询" [ref=f11e20] [cursor=pointer]:
+          - /url: /zixun/
+      - listitem [ref=f11e21]:
+        - link "学生风采" [ref=f11e22] [cursor=pointer]:
+          - /url: /fengcai/
+      - listitem [ref=f11e23]:
+        - link "联系我们" [ref=f11e24] [cursor=pointer]:
+          - /url: /contact/
+  - generic [ref=f11e30]:
+    - generic [ref=f11e31]: 联系我们
+    - generic [ref=f11e35]: 济南德泓教育咨询有限公司
+    - generic [ref=f11e36]:
+      - paragraph [ref=f11e37]: 联系人：林老师
+      - paragraph [ref=f11e38]: 手机：13864188899、17615827726
+      - paragraph [ref=f11e39]: 微信：17615827726
+      - paragraph [ref=f11e40]: 地址：山东省济南市
+  - generic [ref=f11e43]:
+    - generic [ref=f11e44]:
+      - generic [ref=f11e45]: Online Message 在线留言
+      - generic [ref=f11e46]:
+        - paragraph [ref=f11e47]:
+          - text: 家长姓名：
+          - textbox "家长姓名" [ref=f11e48]
+        - paragraph [ref=f11e49]:
+          - text: 联系电话：
+          - textbox "联系电话" [ref=f11e50]
+        - paragraph [ref=f11e51]:
+          - generic [ref=f11e52]: 留言内容：
+          - textbox "我们会对您的个人信息严格保密，请放心填写。" [ref=f11e53]
+        - button "提 交" [ref=f11e55]
+    - list [ref=f11e57]:
+      - listitem [ref=f11e58]: Contact us 联系我们
+      - listitem [ref=f11e59]: 联系人：林老师
+      - listitem [ref=f11e60]: 手机：13864188899、17615827726
+      - listitem [ref=f11e61]: 微信：17615827726
+      - listitem [ref=f11e62]: 地址：山东省济南市
+  - generic [ref=f11e64]:
+    - text: 版权所有：济南德泓教育咨询有限公司 | 备案号：
+    - link "鲁ICP备20032853号-1" [ref=f11e65] [cursor=pointer]:
+      - /url: https://beian.miit.gov.cn/#/Integrated/index

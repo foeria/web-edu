@@ -1,0 +1,33 @@
+{
+    "name": "web-edu/backend",
+    "description": "Web-Edu PHP backend skeleton",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-fileinfo": "*",
+        "ext-gd": "*",
+        "ext-exif": "*",
+        "ext-zip": "*"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "WebEdu\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebEdu\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "page": "home",
+    "title": "网站首页",
+    "modules": 9,
+    "images": 30
+  },
+  {
+    "page": "about",
+    "title": "关于我们",
+    "modules": 1,
+    "images": 2
+  },
+  {
+    "page": "zanding",
+    "title": "问题论坛",
+    "modules": 1,
+    "images": 15
+  },
+  {
+    "page": "zonghe",
+    "title": "综合施教",
+    "modules": 1,
+    "images": 11
+  },
+  {
+    "page": "xunlian",
+    "title": "拓展训练",
+    "modules": 1,
+    "images": 15
+  },
+  {
+    "page": "zixun",
+    "title": "心理咨询",
+    "modules": 1,
+    "images": 15
+  },
+  {
+    "page": "fengcai",
+    "title": "学生风采",
+    "modules": 1,
+    "images": 15
+  },
+  {
+    "page": "contact",
+    "title": "联系我们",
+    "modules": 1,
+    "images": 2
+  }
+]

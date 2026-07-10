@@ -1,0 +1,26 @@
+{
+  "title": "联系我们",
+  "url": "https://www.jndhjyzx.com/contact/",
+  "modules": [
+    {
+      "name": "联系我们",
+      "local_dir": "images/联系我们",
+      "images": [
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/96e14f88ddf0738.png",
+          "filename": "001_96e14f88ddf0738.png",
+          "alt": "",
+          "size_bytes": 30024,
+          "downloaded": true
+        },
+        {
+          "original_url": "http://www.jndhjyzx.com/uploadfile/202212/90229136d5d440.png",
+          "filename": "002_90229136d5d440.png",
+          "alt": "",
+          "size_bytes": 54457,
+          "downloaded": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "济南德泓教育咨询有限公司",
+  "hotline": "13864188899、17615827726",
+  "hotlineLabel": "24小时服务热线：",
+  "icp": "鲁ICP备20032853号-1",
+  "icpUrl": "https://beian.miit.gov.cn/#/Integrated/index",
+  "copyright": "版权所有：济南德泓教育咨询有限公司",
+  "nav": [
+    {
+      "label": "网站首页",
+      "path": "/"
+    },
+    {
+      "label": "关于我们",
+      "path": "/about"
+    },
+    {
+      "label": "问题论坛",
+      "path": "/zanding"
+    },
+    {
+      "label": "综合施教",
+      "path": "/zonghe"
+    },
+    {
+      "label": "拓展训练",
+      "path": "/xunlian"
+    },
+    {
+      "label": "心理咨询",
+      "path": "/zixun"
+    },
+    {
+      "label": "学生风采",
+      "path": "/fengcai"
+    },
+    {
+      "label": "联系我们",
+      "path": "/contact"
+    }
+  ]
+}

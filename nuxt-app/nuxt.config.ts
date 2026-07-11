@@ -6,12 +6,22 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
-      apiBase: 'http://localhost/api',
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost/api',
     },
   },
   nitro: {
     prerender: {
-      routes: ['/'],
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/about',
+        '/contact',
+        '/zanding',
+        '/zonghe',
+        '/xunlian',
+        '/zixun',
+        '/fengcai',
+      ],
     },
   },
 })

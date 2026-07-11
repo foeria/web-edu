@@ -1,0 +1,37 @@
+{
+  "zanding": {
+    "key": "zanding",
+    "title": "问题论坛",
+    "subtitle": "找出问题 精准辅导",
+    "count": 101,
+    "pages": 9
+  },
+  "zonghe": {
+    "key": "zonghe",
+    "title": "综合施教",
+    "subtitle": "多管齐下 发掘学生潜力",
+    "count": 8,
+    "pages": 1
+  },
+  "xunlian": {
+    "key": "xunlian",
+    "title": "拓展训练",
+    "subtitle": "拓展人的价值观",
+    "count": 16,
+    "pages": 2
+  },
+  "zixun": {
+    "key": "zixun",
+    "title": "心理咨询",
+    "subtitle": "个性化定制 心理辅导方案",
+    "count": 20,
+    "pages": 2
+  },
+  "fengcai": {
+    "key": "fengcai",
+    "title": "学生风采",
+    "subtitle": "用心奉献 成长在德泓",
+    "count": 24,
+    "pages": 2
+  }
+}

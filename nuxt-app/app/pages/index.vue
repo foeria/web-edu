@@ -2,7 +2,7 @@
   <div>
     <!-- Banner -->
     <section class="banner-section">
-      <img :src="home.banners[0]?.src" alt="济南德泓教育咨询有限公司">
+      <BannerSlider :slides="home.banners" :interval="4000" />
     </section>
 
     <!-- About -->
@@ -19,25 +19,40 @@
       </div>
     </section>
 
-    <!-- Section cards -->
-    <section class="home-sections">
-      <div class="container">
-        <div class="home-sections-grid">
-          <NuxtLink
-            v-for="sec in home.sections"
-            :key="sec.key"
-            :to="sec.path"
-            class="home-section-card"
-          >
-            <img :src="sec.image" :alt="sec.title">
-            <div class="home-section-card-body">
-              <div class="home-section-card-title">{{ sec.title }}</div>
-              <div class="home-section-card-subtitle">{{ sec.subtitle }}</div>
-            </div>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
+    <!-- Problem Forum -->
+    <HomeSectionGrid
+      :title="home.previews.zanding.title"
+      :subtitle="home.previews.zanding.subtitle"
+      :articles="home.previews.zanding.articles"
+    />
+
+    <!-- Comprehensive Education -->
+    <HomeSectionGrid
+      :title="home.previews.zonghe.title"
+      :subtitle="home.previews.zonghe.subtitle"
+      :articles="home.previews.zonghe.articles"
+    />
+
+    <!-- Expansion Training Gallery -->
+    <HomeGallery
+      :title="home.previews.xunlian.title"
+      :subtitle="home.previews.xunlian.subtitle"
+      :items="home.previews.xunlian.images"
+    />
+
+    <!-- Psychological Counseling News -->
+    <HomeNewsList
+      :title="home.previews.zixun.title"
+      :subtitle="home.previews.zixun.subtitle"
+      :items="home.previews.zixun.items"
+    />
+
+    <!-- Student Style -->
+    <HomeSectionGrid
+      :title="home.previews.fengcai.title"
+      :subtitle="home.previews.fengcai.subtitle"
+      :articles="home.previews.fengcai.articles"
+    />
   </div>
 </template>
 

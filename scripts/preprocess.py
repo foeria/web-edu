@@ -2,11 +2,12 @@ import json
 import os
 import re
 import shutil
+import urllib.request
 from pathlib import Path
 
 ROOT = Path('C:/Users/86198/Desktop/web-edu')
 DATA_DIR = ROOT / 'data'
-OUT_DIR = ROOT / 'nuxt-app' / 'public' / 'data'
+OUT_DIR = ROOT / 'nuxt-app' / 'app' / 'public' / 'data'
 IMG_OUT_DIR = ROOT / 'nuxt-app' / 'public' / 'images'
 
 SECTIONS = [
@@ -133,7 +134,82 @@ def copy_common_boilerplate_images():
                 break
         if len(copied) >= len(BOILERPLATE_PATTERNS):
             break
+
+    # Also try to source boilerplate images from section metadata if article dirs are empty
+    if len(copied) < len(BOILERPLATE_PATTERNS):
+        for sec in SECTIONS:
+            sec_meta_path = DATA_DIR / sec['key'] / 'metadata.json'
+            if not sec_meta_path.exists():
+                continue
+            sec_meta = json.loads(sec_meta_path.read_text(encoding='utf-8'))
+            for mod in sec_meta.get('modules', []):
+                for img in mod.get('images', []):
+                    fname = img['filename']
+                    if not is_boilerplate_image(fname):
+                        continue
+                    if fname in copied:
+                        continue
+                    src = DATA_DIR / sec['key'] / mod['local_dir'] / fname
+                    dest = IMG_OUT_DIR / 'common' / fname
+                    if copy_image(src, dest):
+                        copied.add(fname)
+                        print(f'Copied common image from section metadata: {fname}')
+                if len(copied) >= len(BOILERPLATE_PATTERNS):
+                    break
+            if len(copied) >= len(BOILERPLATE_PATTERNS):
+                break
+
+    # Fallback: use home metadata boilerplate images
+    if len(copied) < len(BOILERPLATE_PATTERNS):
+        home_meta_path = DATA_DIR / 'home' / 'metadata.json'
+        if home_meta_path.exists():
+            home_meta = json.loads(home_meta_path.read_text(encoding='utf-8'))
+            for mod in home_meta.get('modules', []):
+                for img in mod.get('images', []):
+                    fname = img['filename']
+                    if not is_boilerplate_image(fname):
+                        continue
+                    if fname in copied:
+                        continue
+                    src = DATA_DIR / 'home' / mod['local_dir'] / fname
+                    dest = IMG_OUT_DIR / 'common' / fname
+                    if copy_image(src, dest):
+                        copied.add(fname)
+                        print(f'Copied common image from home metadata: {fname}')
+                if len(copied) >= len(BOILERPLATE_PATTERNS):
+                    break
     return copied
+
+
+def download_image(url: str, dest: Path):
+    """Download an image from URL to dest, returning True on success."""
+    if dest.exists():
+        return True
+    try:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        urllib.request.urlretrieve(url, dest)
+        return True
+    except Exception as e:
+        print(f'Failed to download {url}: {e}')
+        return False
+
+
+def ensure_boilerplate_images():
+    """Ensure common boilerplate images exist, downloading if necessary."""
+    common_dir = IMG_OUT_DIR / 'common'
+    common_dir.mkdir(parents=True, exist_ok=True)
+
+    boilerplate = {
+        '001_96e14f88ddf0738.png': 'https://www.jndhjyzx.com/uploadfile/202212/96e14f88ddf0738.png',
+        '001_90229136d5d440.png': 'http://www.jndhjyzx.com/uploadfile/202212/90229136d5d440.png',
+        '002_nyban.jpg': 'https://www.jndhjyzx.com/static/a/web/img/nyban.jpg',
+    }
+
+    for fname, url in boilerplate.items():
+        dest = common_dir / fname
+        if not dest.exists():
+            if download_image(url, dest):
+                print(f'Downloaded boilerplate image: {fname}')
 
 
 def build_site_json():
@@ -178,25 +254,27 @@ def build_sections_json():
     return sections
 
 
-def build_home_json():
+def module_images_from_home(module_name: str, dest_prefix: str):
+    """Copy images from home metadata module and return public src array."""
     home_meta_path = DATA_DIR / 'home' / 'metadata.json'
-    home_meta = json.loads(home_meta_path.read_text(encoding='utf-8')) if home_meta_path.exists() else {'modules': []}
-
+    if not home_meta_path.exists():
+        return []
+    home_meta = json.loads(home_meta_path.read_text(encoding='utf-8'))
     module_map = {m['name']: m for m in home_meta.get('modules', [])}
+    mod = module_map.get(module_name)
+    if not mod:
+        return []
+    src_dir = DATA_DIR / 'home' / mod['local_dir']
+    out = []
+    for img in mod.get('images', []):
+        src = src_dir / img['filename']
+        dest = IMG_OUT_DIR / dest_prefix / img['filename']
+        if copy_image(src, dest):
+            out.append({'src': f'/images/{dest_prefix}/{img["filename"]}', 'alt': img.get('alt', '')})
+    return out
 
-    def module_images(name, dest_prefix):
-        out = []
-        mod = module_map.get(name)
-        if not mod:
-            return out
-        src_dir = DATA_DIR / 'home' / mod['local_dir']
-        for img in mod.get('images', []):
-            src = src_dir / img['filename']
-            dest = IMG_OUT_DIR / dest_prefix / img['filename']
-            if copy_image(src, dest):
-                out.append({'src': f'/images/{dest_prefix}/{img["filename"]}', 'alt': img.get('alt', '')})
-        return out
 
+def build_home_json(section_results: dict):
     # About intro text reused from original homepage
     about_intro = (
         '济南德泓教育咨询有限公司是由济南市工商局批准成立的正规专业咨询教育机构，'
@@ -207,27 +285,76 @@ def build_home_json():
         '的阳光青少年。'
     )
 
-    section_cards = []
+    about_images = module_images_from_home('关于我们', 'home/about')
+    banner_images = module_images_from_home('首页Banner', 'home/banner')
+
+    previews = {}
     for sec in SECTIONS:
         key = sec['key']
-        imgs = module_images(sec['title'], f'home/sections/{key}')
-        section_cards.append({
-            'key': key,
-            'title': sec['title'],
-            'subtitle': sec['subtitle'],
-            'image': imgs[0]['src'] if imgs else '',
-            'path': f'/{key}',
-        })
+        sec_data = section_results.get(key, {})
+        articles = sec_data.get('articles', [])
+
+        if key == 'xunlian':
+            # Gallery: up to 5 images (first large, rest small)
+            gallery_images = []
+            for art in articles[:5]:
+                if art.get('image'):
+                    gallery_images.append({
+                        'src': art['image'],
+                        'alt': art['title'],
+                        'title': art['title'],
+                        'path': art['path'],
+                    })
+            previews[key] = {
+                'key': key,
+                'title': sec['title'],
+                'subtitle': sec['subtitle'],
+                'images': gallery_images,
+            }
+        elif key == 'zixun':
+            # News list: up to 3 items with formatted date
+            items = []
+            for art in articles[:3]:
+                date = art.get('date', '')
+                day = ''
+                year = ''
+                if date and len(date.split('-')) == 3:
+                    parts = date.split('-')
+                    day = f'{parts[1]}.{parts[2]}'
+                    year = parts[0]
+                items.append({
+                    'id': art['id'],
+                    'title': art['title'],
+                    'date': date,
+                    'day': day,
+                    'year': year,
+                    'excerpt': art.get('excerpt', ''),
+                    'path': art['path'],
+                })
+            previews[key] = {
+                'key': key,
+                'title': sec['title'],
+                'subtitle': sec['subtitle'],
+                'items': items,
+            }
+        else:
+            # Card grids: up to 6 articles
+            previews[key] = {
+                'key': key,
+                'title': sec['title'],
+                'subtitle': sec['subtitle'],
+                'articles': articles[:6],
+            }
 
     return {
-        'banners': module_images('首页Banner', 'home/banner'),
+        'banners': banner_images,
         'about': {
             'title': '关于我们',
             'text': about_intro,
-            'image': module_images('关于我们', 'home/about')[0]['src'] if module_images('关于我们', 'home/about') else '',
+            'image': about_images[0]['src'] if about_images else '',
             'link': '/about',
         },
-        'sections': section_cards,
+        'previews': previews,
     }
 
 
@@ -342,6 +469,13 @@ def build_section_data(sec, sections_out_dir: Path):
                 continue
             art_meta = json.loads(meta_path.read_text(encoding='utf-8'))
 
+            # Find the card image for this article to use as fallback
+            card_image = ''
+            for a in articles:
+                if a['id'] == article_id:
+                    card_image = a['image']
+                    break
+
             # Copy non-boilerplate images
             article_images = []
             for img in art_meta.get('images', []):
@@ -355,6 +489,13 @@ def build_section_data(sec, sections_out_dir: Path):
                         'src': f'/images/{dest_prefix}/{img["filename"]}',
                         'alt': img.get('alt', ''),
                     })
+
+            # Fallback to card image if article has no inline images
+            if not article_images and card_image:
+                article_images.append({
+                    'src': card_image,
+                    'alt': '',
+                })
 
             # Build detail JSON
             parsed = parsed_articles.get(article_id)
@@ -396,8 +537,9 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     IMG_OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Copy shared boilerplate images once
+    # Copy shared boilerplate images once, downloading any that are missing
     copy_common_boilerplate_images()
+    ensure_boilerplate_images()
 
     site = build_site_json()
     (OUT_DIR / 'site.json').write_text(json.dumps(site, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -405,23 +547,27 @@ def main():
     sections = build_sections_json()
     (OUT_DIR / 'sections.json').write_text(json.dumps(sections, ensure_ascii=False, indent=2), encoding='utf-8')
 
-    home = build_home_json()
-    (OUT_DIR / 'home.json').write_text(json.dumps(home, ensure_ascii=False, indent=2), encoding='utf-8')
-
     about = build_about_json()
     (OUT_DIR / 'about.json').write_text(json.dumps(about, ensure_ascii=False, indent=2), encoding='utf-8')
 
     contact = build_contact_json()
     (OUT_DIR / 'contact.json').write_text(json.dumps(contact, ensure_ascii=False, indent=2), encoding='utf-8')
 
+    # Build sections first so home.json can reference section previews
     sections_out_dir = OUT_DIR / 'sections'
     sections_out_dir.mkdir(parents=True, exist_ok=True)
+    section_results = {}
     for sec in SECTIONS:
         data = build_section_data(sec, sections_out_dir)
+        section_results[sec['key']] = data
         (sections_out_dir / f"{sec['key']}.json").write_text(
             json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8'
         )
         print(f"Built section {sec['title']}: {len(data['articles'])} articles")
+
+    # Build home.json after sections are ready
+    home = build_home_json(section_results)
+    (OUT_DIR / 'home.json').write_text(json.dumps(home, ensure_ascii=False, indent=2), encoding='utf-8')
 
     print('Preprocessing complete.')
 

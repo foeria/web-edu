@@ -1,0 +1,39 @@
+{
+  "title": "联系我们",
+  "company": "济南德泓教育咨询有限公司",
+  "contacts": [
+    {
+      "label": "联系人",
+      "value": "林老师"
+    },
+    {
+      "label": "手机",
+      "value": "13864188899、17615827726"
+    },
+    {
+      "label": "微信",
+      "value": "17615827726"
+    },
+    {
+      "label": "地址",
+      "value": "山东省济南市"
+    }
+  ],
+  "form": {
+    "title": "ONLINE MESSAGE 在线留言",
+    "fields": [
+      {
+        "label": "家长姓名",
+        "name": "name"
+      },
+      {
+        "label": "联系电话",
+        "name": "phone"
+      },
+      {
+        "label": "留言内容",
+        "name": "message"
+      }
+    ]
+  }
+}

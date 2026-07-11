@@ -1,11 +1,9 @@
 <template>
   <div v-if="sectionData">
-    <div class="section-hero">
-      <div class="container">
-        <div class="section-hero-title">{{ sectionData.title }}</div>
-        <div class="section-hero-subtitle">{{ sectionData.subtitle }}</div>
-      </div>
-    </div>
+    <SectionHero
+      :title="sectionData.title"
+      :subtitle="sectionData.subtitle"
+    />
 
     <div class="article-list">
       <div class="container">

@@ -1,0 +1,312 @@
+- generic [active] [ref=e1]:
+  - heading "24小时服务热线：13864188899、17615827726" [level=1] [ref=e7]
+  - generic [ref=e8]:
+    - list:
+      - listitem [ref=e9]:
+        - link "网站首页" [ref=e10] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/
+      - listitem [ref=e11]:
+        - link "关于我们" [ref=e12] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/about/
+      - listitem [ref=e13]:
+        - link "问题论坛" [ref=e14] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zanding/
+      - listitem [ref=e15]:
+        - link "综合施教" [ref=e16] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zonghe/
+      - listitem [ref=e17]:
+        - link "拓展训练" [ref=e18] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/xunlian/
+      - listitem [ref=e19]:
+        - link "心理咨询" [ref=e20] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zixun/
+      - listitem [ref=e21]:
+        - link "学生风采" [ref=e22] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/fengcai/
+      - listitem [ref=e23]:
+        - link "联系我们" [ref=e24] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/contact/
+  - generic [ref=e26]:
+    - generic:
+      - link:
+        - /url: ""
+    - generic:
+      - link:
+        - /url: ""
+    - link [ref=e290] [cursor=pointer]:
+      - /url: ""
+    - generic:
+      - link:
+        - /url: ""
+    - generic:
+      - link:
+        - /url: ""
+  - generic [ref=e31]:
+    - generic [ref=e32]: 关于我们
+    - generic [ref=e33]: 济南德泓教育咨询有限公司是由济南市工商局批准成立的正规专业咨询教育机构，主要针对青少年厌学逃课、叛逆、早恋、自控力差、啃老、不懂感恩、自卑自恋、离家出走、人格异常、强迫、抑郁、打架斗殴、暴力倾向、亲情淡漠等常见问题。我们坚持以孩子为中心、以家庭为基础、走进孩子心灵、塑造健全人格为理念，把孩子培养成“五会”（即学会自理自立，学会如何学习，学会团结互助，学会为人处事，学会理解关心父母）“三恩”（即知恩，感恩，报恩）的阳光青少年。聘请国内及省内知名心理学、国学、书法家以及管理经验丰富的教务老师，根据孩子不同情况为每一位孩子制定不同的管理和解决方案，采取综合施教的方法，坚持一把钥匙开一把心锁。
+    - link "+查看更多" [ref=e34] [cursor=pointer]:
+      - /url: https://www.jndhjyzx.com/about/
+  - generic [ref=e38]:
+    - generic [ref=e39]: 问题论坛
+    - generic [ref=e43]: 找出问题 精准辅导
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - link [ref=e47] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zanding/182.html
+        - paragraph [ref=e49]: 山东济南叛逆期全封闭式问题青少年学校｜别让无奈，耽误孩子成长
+        - generic [ref=e50]:
+          - text: 济南德泓教育：一位家长满是心酸地倾诉，自家14岁男孩步入青春期后，在社会上结识了一群...
+          - link "【查看详情】" [ref=e51] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zanding/182.html
+      - generic [ref=e52]:
+        - link [ref=e54] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zanding/181.html
+        - paragraph [ref=e56]: 叛逆期封闭式军事化管理特训学校｜济南德泓教育怎么样？地址电话
+        - generic [ref=e57]:
+          - text: 济南德泓教育：坐落于济南市历城区，是经山东省关心下一代工作委员会专业指导、山东省心理...
+          - link "【查看详情】" [ref=e58] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zanding/181.html
+      - generic [ref=e59]:
+        - link [ref=e61] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zanding/180.html
+        - paragraph [ref=e63]: 山东济南叛逆少年管教学校哪家好｜济南德泓教育好不好｜地址电话
+        - generic [ref=e64]:
+          - text: 济南德泓教育：在山东济南历城区，坐落着一所与众不同的教育机构——济南德泓教育（咨询电...
+          - link "【查看详情】" [ref=e65] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zanding/180.html
+      - generic [ref=e66]:
+        - link [ref=e68] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zanding/178.html
+        - paragraph [ref=e70]: 山东济南及周边前十名最好的叛逆厌学青少年教育学校精选指南
+        - generic [ref=e71]:
+          - text: 山东济南及周边前十名最好的叛逆厌学青少年教育学校精选指南济南德泓教育：青春期孩子出现...
+          - link "【查看详情】" [ref=e72] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zanding/178.html
+      - generic [ref=e73]:
+        - link [ref=e75] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zanding/177.html
+        - paragraph [ref=e77]: 山东济南叛逆厌学学生全封闭式特训管教学校，地址电话，联系方式
+        - generic [ref=e78]:
+          - text: 济南德泓教育：在山东济南，有一所专注叛逆学生成长矫正的全封闭式教育学校，专为处于青春...
+          - link "【查看详情】" [ref=e79] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zanding/177.html
+      - generic [ref=e80]:
+        - link [ref=e82] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zanding/176.html
+        - paragraph [ref=e84]: 深夜沉迷游戏、不上学_济南德泓教育帮叛逆厌学孩子重回成长正轨
+        - generic [ref=e85]:
+          - text: 济南德泓教育：孩子熬夜玩游戏作息颠倒，次日清晨死活不肯上学，一提上学便哭闹打闹、紧锁...
+          - link "【查看详情】" [ref=e86] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zanding/176.html
+    - generic [ref=e87]: 综合施教
+    - generic [ref=e91]: 多管齐下 发掘学生潜力
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - link [ref=e95] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zonghe/10.html
+        - paragraph [ref=e97]: 技能培训
+        - generic [ref=e98]:
+          - text: 棋是一种文明的竞技活动，能让大家有公平竞争的意识。对学生的创造力、想像力和意志、忍耐...
+          - link "【查看详情】" [ref=e99] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zonghe/10.html
+      - generic [ref=e100]:
+        - link [ref=e102] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zonghe/6.html
+        - paragraph [ref=e104]: 国学教育
+        - generic [ref=e105]:
+          - text: 国学教育是一本由张成写的图书，一般来说，国学主要是指以中国古典典籍为载体，表达中华民...
+          - link "【查看详情】" [ref=e106] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zonghe/6.html
+      - generic [ref=e107]:
+        - link [ref=e109] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zonghe/9.html
+        - paragraph [ref=e111]: 文化课辅导
+        - generic [ref=e112]:
+          - text: 文化课补习 济南德泓教育所谓一对一教学模式，就是一个老师只教一个学生，这样一来...
+          - link "【查看详情】" [ref=e113] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zonghe/9.html
+      - generic [ref=e114]:
+        - link [ref=e116] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zonghe/87.html
+        - paragraph [ref=e118]: 多位一体辅导模式
+        - generic [ref=e119]:
+          - text: 济南德泓教育：多位一体辅导模式让每个孩子阳光成长! 多位一体辅导模式是:通过科学、专...
+          - link "【查看详情】" [ref=e120] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zonghe/87.html
+      - generic [ref=e121]:
+        - link [ref=e123] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zonghe/5.html
+        - paragraph [ref=e125]: 行为矫正
+        - generic [ref=e126]:
+          - text: 行为矫正 所谓行为矫正训练;是指学习心理学的原理，特别是条件反射的规律，如强化消退...
+          - link "【查看详情】" [ref=e127] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zonghe/5.html
+      - generic [ref=e128]:
+        - link [ref=e130] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/zonghe/71.html
+        - paragraph [ref=e132]: 传统文化教育
+        - generic [ref=e133]:
+          - text: 济南德泓教育：以传统文化教育为理论基础，以责任、担当、爱国教育为品德修养教育，以文化...
+          - link "【查看详情】" [ref=e134] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zonghe/71.html
+  - generic [ref=e136]:
+    - generic [ref=e137]: 拓展训练
+    - generic [ref=e141]: 拓展人的价值观
+    - generic [ref=e142]:
+      - link [ref=e144] [cursor=pointer]:
+        - /url: https://www.jndhjyzx.com/xunlian/93.html
+      - generic [ref=e146]:
+        - link [ref=e148] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/xunlian/54.html
+        - link [ref=e151] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/xunlian/47.html
+        - link [ref=e154] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/xunlian/48.html
+        - link [ref=e157] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/xunlian/53.html
+  - generic [ref=e160]:
+    - generic [ref=e161]: 心理咨询
+    - generic [ref=e165]: 个性化定制 心理辅导方案
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - paragraph [ref=e172]: "08.28"
+          - generic [ref=e173]: "2019"
+        - generic [ref=e174]:
+          - link [ref=e175] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zixun/16.html
+            - paragraph [ref=e176]: 心理辅导的重要性
+          - generic [ref=e177]:
+            - text: 心理辅导，是指教育者运用心理学、教育学、社会学、行为科学乃至精神医学等多种学科的理论与技术，通过集体辅导、个别辅导、教育教学中的心理辅导以及家庭心理辅...
+            - link "[详细]" [ref=e178] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/zixun/16.html
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - paragraph [ref=e181]: "04.25"
+          - generic [ref=e182]: "2021"
+        - generic [ref=e183]:
+          - link [ref=e184] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zixun/86.html
+            - paragraph [ref=e185]: 家长请重视为什么孩子会叛逆、厌学等心理问题
+          - generic [ref=e186]:
+            - text: 济南德泓教育心理专家指出：孩子身上的毛病，都能在我们身上看到原型，也都能在我们家庭找到病根。 就像武汉14岁男生跳楼事件，妈妈当众对孩子的崩溃和殴打，...
+            - link "[详细]" [ref=e187] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/zixun/86.html
+      - generic [ref=e188]:
+        - generic [ref=e189]:
+          - paragraph [ref=e190]: "04.15"
+          - generic [ref=e191]: "2021"
+        - generic [ref=e192]:
+          - link [ref=e193] [cursor=pointer]:
+            - /url: https://www.jndhjyzx.com/zixun/84.html
+            - paragraph [ref=e194]: 济南德泓教育心理专家指出:教育厌学、叛逆的孩
+          - generic [ref=e195]:
+            - text: 济南叛逆、厌学德泓教育培训学校心理专家指出：教育孩子，要因地制宜、因人而异，每个孩子的情况不一样，每个家庭也不一样，既要实施综合教育培训，又要有针对性...
+            - link "[详细]" [ref=e196] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/zixun/84.html
+  - generic [ref=e198]:
+    - generic [ref=e199]: 学生风采
+    - generic [ref=e203]: 用心奉献 成长在德泓
+    - generic [ref=e204]:
+      - generic [ref=e205]:
+        - link [ref=e207] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/fengcai/26.html
+        - generic [ref=e209]:
+          - paragraph [ref=e210]:
+            - link "德泓教育早恋成功案例 2019.09.25" [ref=e211] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/26.html
+              - text: 德泓教育早恋成功案例
+              - generic [ref=e212]: 2019.09.25
+          - generic [ref=e213]:
+            - text: 德泓教育早恋成功案例小朱同学是个活泼好动，变现力很强的初二女生。喜欢唱歌、演讲。由于小朱小学时各方面...
+            - link "[详细]" [ref=e214] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/26.html
+      - generic [ref=e215]:
+        - link [ref=e217] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/fengcai/27.html
+        - generic [ref=e219]:
+          - paragraph [ref=e220]:
+            - link "加强内部学习 提高综合素质 2019.09.25" [ref=e221] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/27.html
+              - text: 加强内部学习 提高综合素质
+              - generic [ref=e222]: 2019.09.25
+          - generic [ref=e223]:
+            - text: 加强内部学习 提高综合素质 济南德泓教育咨询有限公司为进一步 提高教师员工队伍的教学能力，2019年...
+            - link "[详细]" [ref=e224] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/27.html
+      - generic [ref=e225]:
+        - link [ref=e227] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/fengcai/28.html
+        - generic [ref=e229]:
+          - paragraph [ref=e230]:
+            - link "德泓教育成功教育父母离异阴影下的孩子 2019.10.02" [ref=e231] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/28.html
+              - text: 德泓教育成功教育父母离异阴影下的孩子
+              - generic [ref=e232]: 2019.10.02
+          - generic [ref=e233]:
+            - text: 德泓成功教育父母离异阴影下的孩子 文萍今年初三，不愿上学，并非反感学习，一周只去学校3天，但成绩依...
+            - link "[详细]" [ref=e234] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/28.html
+      - generic [ref=e235]:
+        - link [ref=e237] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/fengcai/29.html
+        - generic [ref=e239]:
+          - paragraph [ref=e240]:
+            - link "在德泓学会了爱、认可、平等对待 2019.10.02" [ref=e241] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/29.html
+              - text: 在德泓学会了爱、认可、平等对待
+              - generic [ref=e242]: 2019.10.02
+          - generic [ref=e243]:
+            - text: 在德泓学会了爱、认可、平等对待。 来自济宁的张凡已经高二了，但一直没有发现自己的存在感，喜欢一个人...
+            - link "[详细]" [ref=e244] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/29.html
+      - generic [ref=e245]:
+        - link [ref=e247] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/fengcai/51.html
+        - generic [ref=e249]:
+          - paragraph [ref=e250]:
+            - link "德泓教育：教育孩子厌学成功案例 2020.08.22" [ref=e251] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/51.html
+              - text: 德泓教育：教育孩子厌学成功案例
+              - generic [ref=e252]: 2020.08.22
+          - generic [ref=e253]:
+            - text: 采取什么样的方式能让孩子喜欢上学呢？造成孩子厌学的原因有哪些？济南德泓教育为此分析的原因，做法，以及...
+            - link "[详细]" [ref=e254] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/51.html
+      - generic [ref=e255]:
+        - link [ref=e257] [cursor=pointer]:
+          - /url: https://www.jndhjyzx.com/fengcai/52.html
+        - generic [ref=e259]:
+          - paragraph [ref=e260]:
+            - link "在德泓孩子戒网瘾后妈妈真实分享 2020.08.23" [ref=e261] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/52.html
+              - text: 在德泓孩子戒网瘾后妈妈真实分享
+              - generic [ref=e262]: 2020.08.23
+          - generic [ref=e263]:
+            - text: 来自一位妈妈的困扰和改变成功后的分享:曾经因为孩子的叛逆，网瘾无法自拔，继而休学的问题，找到济南德泓...
+            - link "[详细]" [ref=e264] [cursor=pointer]:
+              - /url: https://www.jndhjyzx.com/fengcai/52.html
+  - generic [ref=e266]:
+    - generic [ref=e267]:
+      - generic [ref=e268]: Online Message 在线留言
+      - generic [ref=e269]:
+        - paragraph [ref=e270]:
+          - text: 家长姓名：
+          - textbox "家长姓名" [ref=e271]
+        - paragraph [ref=e272]:
+          - text: 联系电话：
+          - textbox "联系电话" [ref=e273]
+        - paragraph [ref=e274]:
+          - generic [ref=e275]: 留言内容：
+          - textbox "我们会对您的个人信息严格保密，请放心填写。" [ref=e276]
+        - button "提 交" [ref=e278]
+    - list [ref=e280]:
+      - listitem [ref=e281]: Contact us 联系我们
+      - listitem [ref=e282]: 联系人：林老师
+      - listitem [ref=e283]: 手机：13864188899、17615827726
+      - listitem [ref=e284]: 微信：17615827726
+      - listitem [ref=e285]: 地址：山东省济南市
+  - generic [ref=e287]:
+    - text: 版权所有：济南德泓教育咨询有限公司 | 备案号：
+    - link "鲁ICP备20032853号-1" [ref=e288] [cursor=pointer]:
+      - /url: https://beian.miit.gov.cn/#/Integrated/index

@@ -1,0 +1,59 @@
+- generic [active] [ref=f68e1]:
+  - heading "24小时服务热线：13864188899、17615827726" [level=1] [ref=f68e7]
+  - generic [ref=f68e8]:
+    - list:
+      - listitem [ref=f68e9]:
+        - link "网站首页" [ref=f68e10] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=f68e11]:
+        - link "关于我们" [ref=f68e12] [cursor=pointer]:
+          - /url: /about/
+      - listitem [ref=f68e13]:
+        - link "问题论坛" [ref=f68e14] [cursor=pointer]:
+          - /url: /zanding/
+      - listitem [ref=f68e15]:
+        - link "综合施教" [ref=f68e16] [cursor=pointer]:
+          - /url: /zonghe/
+      - listitem [ref=f68e17]:
+        - link "拓展训练" [ref=f68e18] [cursor=pointer]:
+          - /url: /xunlian/
+      - listitem [ref=f68e19]:
+        - link "心理咨询" [ref=f68e20] [cursor=pointer]:
+          - /url: /zixun/
+      - listitem [ref=f68e21]:
+        - link "学生风采" [ref=f68e22] [cursor=pointer]:
+          - /url: /fengcai/
+      - listitem [ref=f68e23]:
+        - link "联系我们" [ref=f68e24] [cursor=pointer]:
+          - /url: /contact/
+  - generic [ref=f68e30]:
+    - generic [ref=f68e31]: 关于我们
+    - generic [ref=f68e35]: 济南德泓教育咨询有限公司
+    - generic [ref=f68e36]:
+      - paragraph [ref=f68e37]: 济南德泓教育咨询有限公司是由济南市工商局批准成立的正规专业咨询教育机构，主要针对青少年厌学逃课、叛逆、早恋、自控力差、啃老、不懂感恩、自卑自恋、离家出走、人格异常、强迫、抑郁、打架斗殴、暴力倾向、亲情淡漠等常见问题。
+      - paragraph [ref=f68e38]: 我们坚持以孩子为中心、以家庭为基础、走进孩子心灵、塑造健全人格为理念，把孩子培养成“五会”（即学会自理自立，学会如何学习，学会团结互助，学会为人处事，学会理解关心父母）“三恩”（即知恩，感恩，报恩）的阳光青少年。
+      - paragraph [ref=f68e39]: 聘请国内及省内知名心理学、国学、书法家以及管理经验丰富的教务老师，根据孩子不同情况为每一位孩子制定不同的管理和解决方案，采取综合施教的方法，坚持一把钥匙开一把心锁。
+  - generic [ref=f68e42]:
+    - generic [ref=f68e43]:
+      - generic [ref=f68e44]: Online Message 在线留言
+      - generic [ref=f68e45]:
+        - paragraph [ref=f68e46]:
+          - text: 家长姓名：
+          - textbox "家长姓名" [ref=f68e47]
+        - paragraph [ref=f68e48]:
+          - text: 联系电话：
+          - textbox "联系电话" [ref=f68e49]
+        - paragraph [ref=f68e50]:
+          - generic [ref=f68e51]: 留言内容：
+          - textbox "我们会对您的个人信息严格保密，请放心填写。" [ref=f68e52]
+        - button "提 交" [ref=f68e54]
+    - list [ref=f68e56]:
+      - listitem [ref=f68e57]: Contact us 联系我们
+      - listitem [ref=f68e58]: 联系人：林老师
+      - listitem [ref=f68e59]: 手机：13864188899、17615827726
+      - listitem [ref=f68e60]: 微信：17615827726
+      - listitem [ref=f68e61]: 地址：山东省济南市
+  - generic [ref=f68e63]:
+    - text: 版权所有：济南德泓教育咨询有限公司 | 备案号：
+    - link "鲁ICP备20032853号-1" [ref=f68e64] [cursor=pointer]:
+      - /url: https://beian.miit.gov.cn/#/Integrated/index
